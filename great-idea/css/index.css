@@ -84,29 +84,11 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+
 body {
   line-height: 1;
 }
@@ -153,7 +135,7 @@ h5 {
 h4 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 /* Your code starts here! */
@@ -198,9 +180,8 @@ h4 {
 
 header nav a {
   color: grey;
-  text-decoration: overline;
+  text-decoration: none;
   margin: 25px;
-  background-color: black;
 }
 
 header nav a:hover {
@@ -212,7 +193,7 @@ header nav a:hover {
 .logo {
   position: absolute;
   left: 675px;
-  top: 0px;
+  top: 10px;
   height: 20px;
 }
 
@@ -223,7 +204,7 @@ header nav a:hover {
   height: 20px;
 }
 
-header h1 {
+.oheader h1 {
   font-size: 60px;
 }
 .iod1 {
@@ -248,15 +229,15 @@ header h1 {
   height: 300px;
 }
 
-button {
+.obutton {
   position: absolute;
-  top: 260px;
+  top: 290px;
   left: 265px;
 }
 
-footer {
+.ofooter {
   position: absolute;
-  bottom: 150px;
+  bottom: 10px;
 }
 
 .feats {
@@ -331,7 +312,7 @@ footer {
   width: 250px;
 }
 
-footer {
+.ofooter {
   position: absolute;
   bottom: 10px;
   left: 425px;
@@ -387,27 +368,85 @@ footer {
 /*  FLEX STARTS HERE  */
 .fservices {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
+  
 }
 
-.snav {
-  justify-content: flex-start;
+.testing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 68%;
+  
+}
+
+.shimg {
+  margin: 15px;
+}
+
+.sd {
+  justify-content: center;
+  border-bottom: 1px solid black;
+  width: 70%;
+  padding: 5px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid black;
+  width: 35%;
+  margin: 15px;
 }
 
 .cc {
-  display: flex;
+  padding: 10px;
+  margin: 25px;
+  border: 1px solid black;
+  background-color: rgb(238, 214, 250);
 }
 
-.ccc {
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  width: 15%;
-  height: 18%;
-  border: 1px solid black;
-  background-color: whitesmoke;
+
+
+button {
+  border-radius: 6px;
+  width: 125px;
+  height: 35px;
+}
+
+.bp{
+	display: flex;
+	flex-flow: row wrap;
+	width: 33%;
+}
+
+.fd{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+}
+
+.fc{
+	width: 40%;
 }
 
 ol {
   list-style-type: circle;
 }
+
+.services-info-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 50%;
+	
+}
+
+.sfooterc {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 68%;
+	
+  }
